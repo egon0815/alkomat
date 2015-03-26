@@ -11,7 +11,8 @@
     var anzahlInListe=0;
 	
 $(document).ready( function(event) {
-	if(localStorage.getItem("anzahl")=="NaN"){
+
+	if(localStorage.length==0){
 		localStorage.setItem("anzahl","0");
 	} 
 	
