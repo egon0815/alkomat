@@ -29,9 +29,9 @@ $(document).ready( function(event) {
   $('#speichern').on('tap',function(event){
 		addDrink();
    });
-   alert("Liste Erstellen");
+   
 	erstellListe(); 
-	alert("Liste Erstellt");
+	
 	
    $('#delete').on('tap',function(event){
 		// Sucht alle Einträge und löscht diese, geht auch mit localStorage.clear()
@@ -44,7 +44,7 @@ $(document).ready( function(event) {
 		
 		$.mobile.changePage("#p2", {transition:"slide",reverse: true});
    });	
-   alert("Delete registriert");
+   
 
   $('#p1').on('swipeleft',function(event){
 		$.mobile.changePage("#p2", {transition:"slide"});
